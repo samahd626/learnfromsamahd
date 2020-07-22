@@ -1,7 +1,11 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../../node_modules/bootstrap/dist/js/bootstrap.min.js'
+
 import Bio from "../components/bio"
+import Navbar from "../components/nav"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -13,9 +17,10 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <div>
+    <Navbar />
     <Bio />
 
-    <Layout location={location} title={siteTitle} >
+    <Layout location={location} title={siteTitle}>
      
       <SEO title="All posts" />
       {posts.map(({ node }) => {

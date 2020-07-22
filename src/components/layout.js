@@ -3,6 +3,10 @@ import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../../node_modules/bootstrap/dist/js/bootstrap.min.js'
+
+
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
@@ -48,6 +52,7 @@ const Layout = ({ location, title, children }) => {
     )
   }
   return (
+   
     <div
       style={{
         marginLeft: `auto`,
@@ -64,6 +69,7 @@ const Layout = ({ location, title, children }) => {
         <a href="https://www.gatsbyjs.org">Gatsby</a> | <a href="https://www.gatsbyjs.org">Netlify CMS</a>
       </footer>
     </div>
+   
   )
 }
 
