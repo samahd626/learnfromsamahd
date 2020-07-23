@@ -5,7 +5,7 @@ module.exports = {
       name: `Samahd`,
       summary: `I am samahd, I live in a country in Africa and I love building things that help others most especially developers.`,
     },
-    description: `Learn programming`,
+    description: `Learn programming with ease. No ads, no sponsored posts, no tracking, etc`,
     siteUrl: `https://nerdexe.netlify.app/`,
     social: {
       twitter: `nerd_exe_`,
