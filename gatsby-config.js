@@ -53,14 +53,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-173334497-1`,
+        head: true,
       },
     },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Nerd Exe Blog`,
+        name: `Latest`,
         short_name: `Nerd Exe`,
         start_url: `/`,
         background_color: `#ffffff`,
