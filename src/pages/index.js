@@ -1,8 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import '../../node_modules/bootstrap/dist/js/bootstrap.min.js'
 
 import Bio from "../components/bio"
 import Navbar from "../components/nav"
