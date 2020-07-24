@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 
-
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
@@ -49,7 +48,7 @@ const Layout = ({ location, title, children }) => {
     )
   }
   return (
-   
+ 
     <div
       style={{
         marginLeft: `auto`,
@@ -58,14 +57,17 @@ const Layout = ({ location, title, children }) => {
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
+
+
       <header>{header}</header>
       <main>{children}</main>
-      <footer>
+      <footer style={{paddingTop: 100}}>
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a> | <a href="https://www.gatsbyjs.org">Netlify CMS</a>
       </footer>
     </div>
+ 
    
   )
 }

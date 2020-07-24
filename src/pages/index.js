@@ -9,6 +9,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
+
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
@@ -18,9 +19,9 @@ const BlogIndex = ({ data, location }) => {
     <Navbar />
     <Bio />
 
-    <Layout location={location} title={siteTitle}>
-     
-      <SEO title="All posts" />
+    <Layout location={location} title={siteTitle} >
+      
+      <SEO title="All posts" description="desc" />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
@@ -31,19 +32,19 @@ const BlogIndex = ({ data, location }) => {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
+              <small style={{fontSize: '15px', fontWeight: 'lighter', color: 'grey'}}>{node.frontmatter.date}</small><br />
                 <Link style={{ boxShadow: `none`, }} to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
             </header>
-            <section>
+            {/* <section>
               <p
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}
               />
-            </section>
+            </section> */}
           </article>
         )
       })}

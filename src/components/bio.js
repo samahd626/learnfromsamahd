@@ -50,10 +50,10 @@ const Bio = () => {
     >
       
     <p><h1>Hello! My name is <font color="gold">{author.name}</font>. I'm a Software Engineer</h1>
-    <br /><h5 style={{wordSpacing: '10px',}}><b>{author.summary}</b></h5>
-        {` `}<br /><br />
-        <h5 style={{wordSpacing: '10px',}}><b>This website is my digital garden—a compendium of
-         the things I have learned over the years, my projects, and<br /> anything else I want to write about.</b></h5>
+    <h4 style={{wordSpacing: '10px',}}><b>{author.summary}</b></h4>
+        {` `}
+        <h4 style={{wordSpacing: '10px',}}><b>This website is my digital garden—a compendium of
+         the things I have learned over the years, my projects, and<br /> anything else I want to write about.</b></h4>
         <a href={`https://twitter.com/${social.twitter}`}>
           You can follow me on Twitter
         </a>
