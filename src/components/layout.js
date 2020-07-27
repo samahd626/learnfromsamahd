@@ -1,5 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
+import Footer from './footer'
+
+
+
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -9,7 +13,7 @@ const Layout = ({ location, title, children }) => {
 
   if (location.pathname === rootPath) {
     header = (
-      <h1
+      <h6
         style={{
           ...scale(1.5),
           marginBottom: rhythm(1.5),
@@ -25,30 +29,34 @@ const Layout = ({ location, title, children }) => {
         >
           {title}
         </Link>
-      </h1>
+      </h6>
     )
   } else {
     header = (
-      <h3
+      <h6
         style={{
           fontFamily: `Montserrat, sans-serif`,
           marginTop: 0,
+         
         }}
       >
         <Link
           style={{
             boxShadow: `none`,
             color: `inherit`,
+           
           }}
           to={`/`}
         >
           {title}
         </Link>
-      </h3>
+      </h6>
     )
   }
   return (
+ <div>
  
+
     <div
       style={{
         marginLeft: `auto`,
@@ -58,16 +66,17 @@ const Layout = ({ location, title, children }) => {
       }}
     >
 
-
+     
       <header>{header}</header>
       <main>{children}</main>
       <footer style={{paddingTop: 100}}>
+        <Footer />
         © {new Date().getFullYear()}, Built with
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a> | <a href="https://www.gatsbyjs.org">Netlify CMS</a>
+        <a href="https://www.gatsbyjs.org">Gatsby</a> | <a href="https://www.netlify.com">Netlify CMS</a>
       </footer>
     </div>
- 
+    </div>
    
   )
 }

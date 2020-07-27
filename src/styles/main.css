@@ -1,14 +1,15 @@
 /* Add a black background color to the top navigation */
 .topnav {
-    background-image: linear-gradient(gold, yellow);
+    background: whitesmoke;
     overflow: hidden;
     padding-left: 100px;
     padding-right: 100px;
-    top: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     height: 80px;
-
+    
   }
+  
   
   /* Style the links inside the navigation bar */
   .topnav a {

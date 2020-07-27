@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Nerd Exe Blog`,
+    title: `Latest`,
     author: {
       name: `Samahd`,
       summary: `I am samahd, I live in a country in Africa and I love building things that help others most especially developers.`,
@@ -61,7 +61,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Latest`,
+        name: `NerdExe Blog`,
         short_name: `Nerd Exe`,
         start_url: `/`,
         background_color: `#ffffff`,

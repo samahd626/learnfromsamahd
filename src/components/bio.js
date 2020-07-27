@@ -8,6 +8,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import '../styles/responsive.css'
 
 import { rhythm } from "../utils/typography"
 
@@ -37,7 +38,7 @@ const Bio = () => {
 
   const { author, social } = data.site.siteMetadata
   return (
-    <div style={{backgroundColor: '#1b1d25', color: 'white',}}>
+    <div style={{ color: '#1b1d25', background: '#ee990078 ', marginTop: '0px'}}>
     <div
       style={{
         marginLeft: `auto`,
@@ -49,16 +50,18 @@ const Bio = () => {
       }}
     >
       
-    <p><h1>Hello! My name is <font color="gold">{author.name}</font>. I'm a Software Engineer</h1>
-    <h4 style={{wordSpacing: '10px',}}><b>{author.summary}</b></h4>
-        {` `}
-        <h4 style={{wordSpacing: '10px',}}><b>This website is my digital garden—a compendium of
+    <p><h1>Hello! My name is <font color="purple">{author.name}</font>. I'm a Software Engineer</h1>
+    <h4 style={{ fontFamily:'sans-serif', paddingRight: '20px' }}><b>{author.summary}</b></h4>
+       
+    
+        <h4 style={{ fontFamily:'sans-serif', paddingRight: '50px' }}><b>This website is my digital garden—a compendium of
          the things I have learned over the years, my projects, and<br /> anything else I want to write about.</b></h4>
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You can follow me on Twitter
+        <a href={`https://facebook.com/${social.twitter}`}>
+          You can follow my page on Facebook
         </a>
       </p>
       <Image
+        className='hide'
         fixed={data.avatar.childImageSharp.fixed}
         alt={author.name}
         style={{

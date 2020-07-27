@@ -1,0 +1,36 @@
+.row{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "box1 box2"
+    ;
+}
+.box1{
+    grid-area: box1;
+    align-items: center;
+    padding: 10px;
+    background-color: tomato ;
+    color: white;
+
+    margin: 30px;
+    width: fit-content;
+}
+.box2{
+    grid-area: box2;
+    align-items: center;
+    padding: 10px;
+    border:2px solid tomato ;
+    color: tomato;
+    margin: 30px;
+    width: fit-content;
+}
+.box3{
+    font-family: Arial, Helvetica !important;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 100px;
+    padding-bottom: 0px;
+}

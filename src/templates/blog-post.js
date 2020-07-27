@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
-import Newfooter from "../components/footer"
+import Navbar from "../components/nav"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
@@ -12,6 +11,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const { previous, next } = pageContext
 
   return (
+    <div><Navbar />
     <Layout location={location} title={siteTitle}>
       <SEO
         title={post.frontmatter.title}
@@ -43,9 +43,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             marginBottom: rhythm(1),
           }}
         />
-        <footer>
-          <Newfooter />
-        </footer>
+        
       </article>
 
       <nav>
@@ -75,6 +73,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         </ul>
       </nav>
     </Layout>
+    </div>
   )
 }
 
