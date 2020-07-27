@@ -21,7 +21,7 @@ const BlogIndex = ({ data, location }) => {
 
     <Layout location={location} title={siteTitle} >
       
-      <SEO title="All posts" description="desc"/>
+      <SEO title="All posts" description="I'm Samahd, I write on this site to help developers like you. I don't display ads, sponsored posts and the likes on my Digital garden for max user experience."/>
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
