@@ -24,6 +24,7 @@
   }
   .float-right{
       float: right !important;
+      display: flex;
   }
   
   /* Change the color of links on hover */
@@ -32,4 +33,15 @@
     color: black;
   }
   
-  
+  @media only screen and (max-width: 600px){
+    .topnav {
+      background: whitesmoke;
+      padding-left: 0px;
+      padding-right: 0px;
+     
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      height: 80px;
+      
+    }
+    
+  }
