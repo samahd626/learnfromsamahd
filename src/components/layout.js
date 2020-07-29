@@ -67,7 +67,7 @@ const Layout = ({ location, title, children }) => {
     >
 
      
-      <header><h2>Latest posts</h2></header>
+      <header style={{borderBottom: '20px solid green', width: '200px',}}><h2>Latest posts</h2></header>
       <main>{children}</main>
       <footer style={{paddingTop: 100}}>
         <Footer />

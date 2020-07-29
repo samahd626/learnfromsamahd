@@ -12,26 +12,30 @@
     align-items: center;
     padding: 10px;
     background-color: tomato ;
+    border:2px solid tomato ;
+
     color: white;
 
     margin: 30px;
-    width: fit-content;
+    width: 400px;
+    height: 70px;
 }
 .box2{
+    display: flex;
     grid-area: box2;
     align-items: center;
     padding: 10px;
     border:2px solid tomato ;
     color: tomato;
     margin: 30px;
-    width: fit-content;
+    width: 400px;
+    height: 70px;
 }
 .box3{
     font-family: Arial, Helvetica !important;
     font-size: 20px;
-    /* border-radius: 10px;
-    padding-left: 50px;
-    padding-right: 100px; */
+    border-radius: 10px;
+    
     padding-bottom: 0px;
 }
 @media only screen and (max-width: 600px){

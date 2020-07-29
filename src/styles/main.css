@@ -1,6 +1,6 @@
 /* Add a black background color to the top navigation */
 .topnav {
-    background: whitesmoke;
+    background: #ee990078;
     overflow: hidden;
     padding-left: 100px;
     padding-right: 100px;
@@ -14,7 +14,7 @@
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
-    color: grey;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -35,7 +35,7 @@
   
   @media only screen and (max-width: 600px){
     .topnav {
-      background: whitesmoke;
+      background: #ee990078;
       padding-left: 0px;
       padding-right: 0px;
      
