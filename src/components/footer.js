@@ -4,6 +4,7 @@ import '../styles/grid.css'
 const Newfooter = () => {
     return(
         <div style={{marginTop: '50px' }}>
+          <iframe src="https://samahd.substack.com/embed" title="my newsletter"  height="320" style={{border:'1px solid #EEE', background:'white', width: '100%'}} frameborder="0" scrolling="no"></iframe>
         <div className="box3">
         <h1>Author</h1>
         <div>I'm Samahd, I write on this site to help developers like you. I don't display ads, sponsored posts and the likes on my Digital garden for max user experience. Support what I do:
