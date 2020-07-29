@@ -25,11 +25,13 @@
     grid-area: box2;
     align-items: center;
     padding: 10px;
-    border:2px solid tomato ;
+    border:2px solid tomat ;
     color: tomato;
     margin: 30px;
-    width: 400px;
+    width: 0px;
     height: 70px;
+    Visibility: hidden;
+
 }
 .box3{
     font-family: Arial, Helvetica !important;
