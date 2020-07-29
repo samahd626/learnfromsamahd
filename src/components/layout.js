@@ -67,13 +67,13 @@ const Layout = ({ location, title, children }) => {
     >
 
      
-      <header>{header}</header>
+      <header><h2>Latest posts</h2></header>
       <main>{children}</main>
       <footer style={{paddingTop: 100}}>
         <Footer />
-        © {new Date().getFullYear()}, Built with
+        © {new Date().getFullYear()} | Built by
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a> | <a href="https://www.netlify.com">Netlify CMS</a>
+        🚀Samahd
       </footer>
     </div>
     </div>

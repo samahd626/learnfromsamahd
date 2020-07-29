@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Latest`,
+    title: `Nerd Exe Blog`,
     author: {
       name: `Samahd`,
       summary: `I am samahd, I live in a country in Africa and I love building things that help others most especially developers.`,
@@ -8,7 +8,7 @@ module.exports = {
     description: `Learn programming with ease. No ads, no sponsored posts, no tracking, etc`,
     siteUrl: `https://nerdexe.netlify.app/`,
     social: {
-      twitter: `nerd_exe_`,
+      twitter: `nerd.mhe`,
     },
   },
   plugins: [
