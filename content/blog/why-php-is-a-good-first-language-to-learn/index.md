@@ -1,7 +1,7 @@
 ---
 title: Why PHP is a good first language to learn
 date: 2020-07-29T17:48:16.641Z
-description: Hello, this post is about why you shouldn’t learn php as a beginner
+description: Hello, this post is about why you should learn php as a beginner
   aspiring to be a pro someday. You should read this if you really want to be
   pro.
 tags:
