@@ -4,7 +4,10 @@ date: 2020-07-29T17:48:16.641Z
 description: Hello, this post is about why you shouldn’t learn php as a beginner
   aspiring to be a pro someday. You should read this if you really want to be
   pro.
-tags: php, programming
+tags:
+  - coding
+  - php
+  - ""
 ---
 ![Header](0d398405-d0a5-4c9d-810c-2033cc18e1b3.png "Intro banner")
 
