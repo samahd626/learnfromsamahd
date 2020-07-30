@@ -4,6 +4,7 @@ date: 2020-07-23T05:32:29.708Z
 description: Hello, My name is samahd and I will be posting a lot of awesome
   programming stuffs on my digital garden as a Fullstack software engineer and
   freelancer.
+tags: post one, nerdexe
 ---
 ## Introduction
 

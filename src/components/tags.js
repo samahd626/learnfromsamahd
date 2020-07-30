@@ -7,12 +7,12 @@ const Tags = ({ children }) =>
         <li
           key={t}
           style={{
-            borderRadius: `4px`,
-            border: `1px solid grey`,
+            borderRadius: `10px`,
+            border: `1px solid lightblue`,
             padding: `2px 6px`,
             marginRight: `5px`,
             fontSize: `80%`,
-            backgroundColor: "#007acc",
+            backgroundColor: 'green',
             color: "white",
             listStyle: "none",
           }}
