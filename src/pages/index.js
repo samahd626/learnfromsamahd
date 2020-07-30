@@ -1,5 +1,6 @@
 import React, {useEffect} from "react"
 import { Link, graphql } from "gatsby"
+import Tags from "../components/tags"
 
 
 import Bio from "../components/bio"
@@ -53,6 +54,7 @@ const BlogIndex = ({ data, location }) => {
       <SEO title="All posts" description="I'm Samahd, I write on this site to help developers like you. I don't display ads, sponsored posts and the likes on my Digital garden for max user experience."/>
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
+        const tags = node.frontmatter.tags
         return (
           <article key={node.fields.slug}>
             <header>
@@ -61,7 +63,9 @@ const BlogIndex = ({ data, location }) => {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-              <small style={{fontSize: '15px', fontWeight: 'lighter', color: 'grey'}}>{node.frontmatter.date}</small><br />
+              <small style={{fontSize: '15px', fontWeight: 'lighter', color: 'grey'}}>{node.frontmatter.date}</small>
+              {tags && tags.length > 0 ? ` - ` : ``}
+        <Tags>{tags}</Tags><br />
                 <Link style={{ boxShadow: `none`, }} to={node.fields.slug}>
                   {title}
                 </Link>
@@ -104,6 +108,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            tags
           }
         }
       }
